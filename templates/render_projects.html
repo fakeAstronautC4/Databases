@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    {% for projects in all_projects %}    
+        <h3> Name: {{ projects[1] }} </h3>
+        <h3> Description: {{ projects[2] }} </h3>
+        <h3> Status: {{ projects[3] }} </h3>
+        <h3> Team ID: {{ projects[4] }} </h3>
+        
+        <br><br>
+
+    {% endfor %}
+{% endblock%}
